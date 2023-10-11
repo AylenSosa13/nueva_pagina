@@ -1,0 +1,208 @@
+.empty-block {
+    background-color: #fff;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    height: 80px; /* Ajusta la altura según tus preferencias */
+    display: flex; /* Utiliza la propiedad flexbox para organizar los elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.empty-block img {
+    width: 100px; /* Ajusta el ancho de la imagen según tus necesidades */
+    margin-right: 10px; /* Agrega un margen derecho para separar la imagen del texto */
+}
+
+.text-head {
+    display: flex; /* Utiliza flexbox para organizar el texto en fila */
+    flex-direction: column; /* Organiza el texto en columna (uno encima del otro) */
+}
+
+.text1, .text3 {
+    font-size: 18px; /* Ajusta el tamaño de fuente según tus necesidades */
+    font-weight: bold; /* Puedes agregar negrita u otros estilos de fuente si lo deseas */
+    margin-top: -20px; /* Ajusta este valor para subir más el texto */
+}
+
+.text2, .text4  {
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+    margin-top: -10px; /* Ajusta este valor para subir el texto 2 */
+}
+
+/* Estilos adicionales para el bloque en blanco */
+.empty-block img {
+    width: 100px; /* Ajusta el ancho de la imagen según tus necesidades */
+    margin-right: 10px; /* Agrega un margen derecho para separar la imagen del texto */
+}
+
+.text-head, .text-footer{
+    display: flex; /* Utiliza flexbox para organizar el texto en fila */
+    flex-direction: column; /* Organiza el texto en columna (uno encima del otro) */
+}
+
+.text1, .text3  {
+    margin-top: 5px;
+    font-size: 20px; /* Ajusta el tamaño de fuente según tus necesidades */
+    font-weight: bold; /* Puedes agregar negrita u otros estilos de fuente si lo deseas */
+    padding: 5px;
+    
+}
+
+.text2, .text4 {
+    font-size: 30px;
+    padding-left: 0px;
+    margin-right: 30px;
+    font-size: 30px;
+    color: cadetblue;
+}
+
+
+/* Estilos para el barra de navegación */
+ul.navbar {
+
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+ul.navbar li {
+    display: inline-block;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para el menú desplegable */
+ul.navbar li ul.dropdown {
+
+    margin-left: -10px;
+    margin-right: -10px;
+
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+ul.navbar li:hover ul.dropdown {
+    display: block;
+}
+
+ul.navbar li ul.dropdown li {
+    display: block;
+}
+
+ul.navbar li ul.dropdown li a {
+    padding: 12px 16px;
+
+
+
+
+}
+
+/* Estilos para la imagen de fondo */
+.hospital-background::before {
+    content: "";
+    background-image: url('hospital.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8; /* Ajusta la opacidad de la imagen de fondo */
+}
+
+.hospital-background {
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    background-attachment: fixed;
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Estilos para la imagen del footer */
+img.footer-image {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px; /* Ajuste la separación superior según sus preferencias */
+    margin-left: 10px;
+    margin-right: 10px; /* Ajuste el margen derecho según sus preferencias */
+}
+
+/* Estilos para la parte de texto del footer */
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea el texto al final del contenedor */
+    margin-left: 700px;
+    margin-right: 40px; /* Agrega un margen izquierdo para separar del otro contenedor */
+    /* Otros estilos... */
+}
+
+
+/* Estilos para los párrafos dentro de footer-text */
+.footer-text p {
+    margin: 0;
+    text-align: left;
+}
+
+/* Estilos para text-footer */
+.text-footer {
+    display: flex;
+    align-items: center; /* Centramos verticalmente los elementos */
+    margin-left: -125px;
+    margin-right: 55px; /* Agrega un margen derecho para separar del otro contenedor */
+}
+
+.text-footer .text3 {
+    margin-right: 35px; /* Agregamos el margen de 8px a la derecha del elemento .text3 */
+}
+
+/* Estilos para el copyright (copy) */
+.copy {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #999;
+    background-color: #333;
+    position: absolute;
+    bottom: 0; /* Lo colocamos en la parte inferior */
+    top: 120px;
+    left: 50%; /* Lo colocamos en el centro horizontal */
+    transform: translateX(-50%); /* Alineamos el centro del elemento con el centro del footer */
+}
